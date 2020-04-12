@@ -24,9 +24,10 @@ public class Buoi02_BrowserCommands {
         // trình duyệt   truy cập vào 1 trang web
         driver.navigate().to("https://ngoisao.net/");
         driver.navigate().back();
-        // driver.navigate().refresh();
+        //driver.navigate().refresh();
 
         driver.navigate().forward();
         // driver.manage().window().maximize();
+
 }
 }
