@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Wait;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
-public class Buoi05_HandleTextEditor {
+public class Buoi06_HandleTextEditor {
     public static void main(String[] args) {
         String projectPath = System.getProperty("user.dir");
         System.out.println(projectPath);
