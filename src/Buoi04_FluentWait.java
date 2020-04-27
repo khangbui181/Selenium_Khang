@@ -28,12 +28,12 @@ public class Buoi04_FluentWait {
 
         // Tắt popup "Ở nhà là nhất - 10K
         // WebElement btnClose1 = driver.findElement(By.xpath("//div[@class='modal-content']/button[starts-with(@class,'close')]"));
-        WebElement btnClose1 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='modal-content']/button[starts-with(@class,'close')]")));
+        WebElement btnClose1 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='modal-content']/button[starts-with(@class,'close')]")));
         btnClose1.click();
 
         // Tắt popup "Bật thông báo để không bỏ lỡ..."
         // WebElement btnClose2 = driver.findElement(By.xpath("//button[starts-with(@class,'closeBtn')]"));
-        WebElement btnClose2 = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[starts-with(@class,'closeBtn')]")));
+        WebElement btnClose2 = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[starts-with(@class,'closeBtn')]")));
         btnClose2.click();
 
         // Click Đăng nhập
@@ -45,7 +45,7 @@ public class Buoi04_FluentWait {
 
         // Click link "Đã có SendoID"
         // WebElement eleHaveSendoId = driver.findElement(By.xpath("//span[text()='Đã có SendoID']"));
-        WebElement eleHaveSendoId = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[text()='Đã có SendoID']")));
+        WebElement eleHaveSendoId = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='Đã có SendoID']")));
         eleHaveSendoId.click();
 
         // Nhập textbox Email
